@@ -1,0 +1,531 @@
+*{
+    padding: 0;
+    margin : 0;
+    text-decoration: none;
+    box-sizing : border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: #EEF4ED;
+    font-family: 'Poppins';
+}
+
+h1,h2,h3{
+    font-family: 'Merriweather';
+    margin-bottom : 20px;
+}
+
+#nav{
+    margin-bottom : 20px;
+}
+
+.links{
+    list-style-type: none;
+    float: right;
+    margin-right: 60px;
+    z-index: 2;
+}
+
+#logo{
+    font-size: 22px;
+    color:#134074;
+    font-family: 'Merriweather';
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 5%;
+}
+
+.links > li{
+    display: inline-block;
+    line-height: 50px;
+    margin : 0 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.nav-link{
+    position: relative;
+    color: black;
+    padding-bottom: 3px;
+}
+
+
+/* adding link animation */
+.nav-link:before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: none;
+    transition: .5s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+}
+
+.links li:hover .nav-link:before
+{
+    background: #134074;
+    width: 100%;
+}
+
+.links li:hover{
+    .nav-link{
+        color: #134074;
+    }
+}
+
+/* styling hero section */
+
+#hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 30px ;
+    height: 90vh;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-text>h1{
+    font-size: 5rem;
+    line-height: 100px;
+    color:#134074;
+}
+
+#hero-image-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blob{
+    border-radius: 80% 28% 40% 30% ;
+    /* background-color:#134074; */
+    background-color:#676f66;
+    height: 400px;
+    width : 400px;
+    position: relative;
+}
+
+.blob>img{
+    height: 420px;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+#home button{
+    height: 50px;
+    width: 250px;
+    border: 0;
+    background-color: crimson;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#home button>a{
+    color: white;
+}
+
+#home{
+    /* margin-bottom: 10px; */
+    height: 100vh;
+}
+
+
+/* styling projects section */
+
+#projects{
+    margin-bottom : 4rem;
+}
+
+#projects h2{
+    font-size: 4rem;
+    color:#134074;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-outer-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+ .project-container{
+    width: 400px;
+    height: 320px;
+    background-color:white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 0 10px #676f66;
+    border-radius: 2px;
+    margin: 25px 0 25px 0;
+}
+
+.project-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    display: flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.intro{
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background: white;
+    bottom: 10px;
+}
+.intro h3{
+    padding-bottom: 3px;
+}
+
+.intro button{
+    background-color:black;
+    width: 100%;
+    height: 2rem;
+    margin-top: 10px;
+    border: 0;
+}
+
+.intro button a{
+    color: white;
+    width: 100%;
+}
+.project-container:hover{
+    cursor: pointer;
+}
+
+.project-container .intro:hover{
+    height: 200px;
+    bottom: 10px;
+}
+
+
+#skills h2{
+    text-align: center;
+    font-size: 4rem;
+    color:#134074;
+}
+
+#skills{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.list-container ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.list-container ul li{
+    margin: 20px;
+    background: rgba(0,0,0);
+    padding: 8px;
+    font-size: 1.25rem;
+    box-shadow: 2px 0 8px #676f66;
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer;
+}
+
+/* styling about me section */
+
+#aboutme{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+#aboutme h2{
+    font-size: 4rem;
+    color:#134074;
+    text-align: center;
+}
+
+#aboutme .about-content{
+    width: 50%;
+}
+
+.aboutme-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme .about-content h3{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.outer-list-education{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.outer-list-education i{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.outer-list-education h4{
+    margin-bottom: 2.5rem;
+}
+
+.edu-info{
+    font-size: 15px;
+    width: 70%;
+    list-style-type: none;
+}
+
+.about-content button{
+    margin: 2rem 0 2rem 0;
+    background-color: crimson;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.about-content button a{
+    color: white;
+}
+
+/* styling contact me section */
+
+#contactme{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #134074;
+    gap: 3rem;
+}
+
+/* .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.title h2{
+    font-size: 3rem;
+    color:#EEF4ED;
+    /* padding-top: 30px; */
+    text-align: center; 
+}
+
+.outercontainer-contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-links i{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-links p a{
+    color: white;
+}
+
+.contact-links p {
+    color: white;
+}
+
+
+/* adding responsiveness by making menubar */
+
+.menu-checkbtn{
+    font-size: 20px;
+    color:#134074;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-check{
+    display: none; 
+}
+
+
+@media (max-width : 858px){
+    .menu-checkbtn{
+        display: block;
+    }
+
+    .links{
+        position : fixed;
+        width: 100%;
+        height: 100vh;
+        background:#134074;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .open{
+        left: 0;
+    }
+    .nav-link{
+        color: #EEF4ED;
+    }
+    .links li{
+        display: block;
+    }
+    .links li:hover .nav-link:before
+    {
+        background: white;
+        width: 100%;
+    }
+    
+    .links li:hover{
+        .nav-link{
+            color:white;
+        }
+    }
+}
+
+
+/* adding responsiveness to hero section */
+
+@media (max-width : 858px){
+    #hero-section{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .blob{
+        border-radius: 80% 28% 40% 30% ;
+        height: 200px;
+        width : 200px;
+    }
+
+    .blob>img{
+        height: 220px;
+        bottom: 20px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .hero-text>h1{
+        font-size: 3rem;
+        line-height: 60px;
+        text-align: center;
+    }
+    
+    .contactbtn-container{
+        text-align: center;
+    }
+    .hero-text>p{
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+}
+/* 
+adding animation to conatct btn */
+#home button:hover{
+    background-color: #134074;
+}
+/* adding animation to intro button */
+.intro button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+/* adding animation to skills */
+
+.list-container ul li:hover{
+    transform: scale(1.25,1.25);
+}
+
+/* adding responsiveness to project section */
+@media (max-width : 1000px){
+    .projects-outer-container{
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+/* adding responsiveness to skills section */
+@media (min-width: 600px) and (max-width: 1024px){
+    .list-container ul{
+        display: flex;
+        width: 700px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 599px){
+    .list-container ul{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #skills{
+        display:block;
+        flex-direction: column;
+        margin-bottom: 6rem;
+        padding: 0 20px 0 20px;
+    }
+}
+
+/* adding responsiveness to about me section */
+
+@media (max-width : 1000px){
+    #aboutme{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutme .about-content{
+       text-align: center;
+       width: 90%;
+    }
+    .outer-list-education{
+        flex-direction: column;
+        align-items: center;
+    }
+    .edu-info{
+        width: 90%;
+    }
+    
+}
