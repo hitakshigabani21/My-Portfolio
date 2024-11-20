@@ -529,3 +529,64 @@ adding animation to conatct btn */
     }
     
 }
+
+
+/* #nav{
+    margin-bottom : 20px;
+}
+
+.links{
+    list-style-type: none;
+    float: right;
+    margin-right: 60px;
+    z-index: 2;
+}
+
+#logo{
+    font-size: 22px;
+    color:#134074;
+    font-family: 'Merriweather';
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 5%;
+}
+
+.links > li{
+    display: inline-block;
+    line-height: 50px;
+    margin : 0 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.nav-link{
+    position: relative;
+    color: black;
+    padding-bottom: 3px;
+}
+ */
+
+/* adding link animation */
+/* .nav-link:before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: none;
+    transition: .5s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+}
+
+.links li:hover .nav-link:before
+{
+    background: #134074;
+    width: 100%;
+}
+
+.links li:hover{
+    .nav-link{
+        color: #134074;
+    }
+} */
