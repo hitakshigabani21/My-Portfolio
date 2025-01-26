@@ -339,6 +339,7 @@ h1,h2,h3{
 
 .title h2{
     font-size: 3rem;
+    margin-top: 30px;
     color:#EEF4ED;
     /* padding-top: 30px; */
     text-align: center; 
